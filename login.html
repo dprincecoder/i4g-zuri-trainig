@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <h1><a class="navbar-logo-link" href="/">dprincecoder</a></h1>
+      </div>
+      <ul class="navbar-list">
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="/">About me</a>
+        </li>
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="contact.html">Contact me</a>
+        </li>
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="register.html">Register</a>
+        </li>
+        <li class="navbar-list-item active">
+          <a class="navbar-list-item-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-title">
+            <h1 class="hero-content-title">Welcome back</h1>
+          </div>
+          <p class="hero-content-text">
+            I am glad you are back Sign in to continue where we left off.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="form-body">
+        <form action="" class="form-wrap">
+          <div class="form-top">
+            <h2 class="form-details">General Details</h2>
+            <div class="form-top-wrap">
+              <div class="form-group">
+                <label for="name" class="form-label">Email</label>
+                <input
+                  required
+                  type="text"
+                  class="form-input"
+                  placeholder="Enter your Email"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-bottom">
+            <h2 class="form-details">Security Details</h2>
+            <div class="form-bottom-wrap">
+              <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  required
+                  type="password"
+                  class="form-input"
+                  placeholder="Enter your password"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="form-button">Sign In</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2022 dprincecoder All rights reserved.</p>
+    </footer>
+  </body>
+</html>
