@@ -18,6 +18,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 
 .navbar-logo {
   display: flex;
@@ -25,6 +31,7 @@
   justify-content: center;
   margin-left: 2rem;
 }
+
 .navbar-logo h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -46,6 +53,12 @@
   justify-content: space-between;
   cursor: pointer;
 }
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+  .navbar-list {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .navbar-list-item {
   display: flex;
@@ -56,6 +69,13 @@
   font-weight: 600;
   font-family: "Roboto Mono", monospace;
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+  .navbar-list-item {
+    padding: 8px;
+    margin: 0;
+    font-size: 10px;
+  }
 }
 
 .navbar-list-item-link {
@@ -75,7 +95,7 @@
 /* hero styles here */
 .hero {
   width: 100%;
-  height: 60vh;
+  height: fit-content;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/ecommerce-web-fc5d7.appspot.com/o/laptop-coffee.jpeg?alt=media&token=f0eb41c6-45ac-49c5-887c-9bddfd36a8a1");
   background-size: cover;
   background-position: center;
@@ -83,6 +103,19 @@
   position: relative;
   display: flex;
   justify-content: center;
+}
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+  .hero {
+    height: fit-content;
+  }
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
 }
 
 .hero-title {
@@ -95,6 +128,12 @@
   color: #f08d03;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+  .hero-content-title {
+    padding: 8px;
+    font-size: 3.5rem;
+  }
 }
 
 .hero-content-subtitle {
@@ -114,8 +153,7 @@
 }
 
 .hero-content-button {
-  font-size: 1.5rem;
-  transform: translateX(150%);
+  font-size: 1.2rem;
   font-weight: 600;
   background-color: #f08d03;
   color: white;
@@ -131,15 +169,37 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   cursor: pointer;
-  -webkit-transform: translateX(150%);
-  -moz-transform: translateX(150%);
-  -ms-transform: translateX(150%);
-  -o-transform: translateX(150%);
 }
 
 .hero-content-button:hover {
   background-color: #000;
   border: 1px solid #f08d03;
+}
+
+.hero-content-button-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #037ff0;
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
 /* features */
@@ -186,6 +246,11 @@ main {
 
 .features-list-item {
   font-size: 1.2rem;
+}
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+  .features-list-item {
+    font-size: 13px;
+  }
 }
 
 .details-title {
@@ -246,7 +311,6 @@ ol {
   max-height: 400px;
   object-fit: contain;
 }
-
 
 .contact-info {
   margin: 1rem;
